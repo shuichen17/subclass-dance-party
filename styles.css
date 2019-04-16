@@ -26,11 +26,11 @@ body, a:link, a:visited, a:active{
   
 }
 .blueDancer{
-  border:70px solid blue;
+  border:30px solid blue;
 }
 
 .greenDancer{
-  border:50px solid green;
+  border:30px solid green;
 } 
 .dancer{
   position: absolute;

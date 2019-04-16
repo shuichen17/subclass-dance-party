@@ -12,4 +12,9 @@ makeRedDancer.prototype.step = function() {
   
   this.$node.toggle();
   this.$node.addClass('redDancer');
+  this.$node.addClass('dancer');
+}
+
+makeRedDancer.prototype.lineUp = function() {
+  this.$node.animate({left: '100px'});
 }
