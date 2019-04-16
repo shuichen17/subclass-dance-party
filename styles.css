@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background: url("nightclub.jpg") no-repeat center center fixed;
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -20,8 +21,18 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+.redDancer{
+  border:30px solid red;
+  
+}
+.blueDancer{
+  border:70px solid blue;
+}
+
+.greenDancer{
+  border:50px solid green;
+} 
 .dancer{
-  border:10px solid red;
+  position: absolute;
   border-radius:10px;
-  position:absolute;
 }
