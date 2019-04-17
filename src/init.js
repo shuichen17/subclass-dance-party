@@ -27,12 +27,12 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
-    window.dancers.push(dancer);
+    window.dancers.push(dancer);   // each dancer created needs to be store in an array
     $('body').append(dancer.$node);
   });
   
   $('.addLineUpButton').on('click', function(event) {
-    debugger;
+   
     var dancers = window.dancers;
     
     for (var i = 0; i < dancers.length; i++) {
@@ -40,9 +40,13 @@ $(document).ready(function() {
     }
   })
   
-  $('.dancer').mouseover(function() {
-    $('.dancer').css();
-    
-  })
+  
+  
+  
+  
+  
+  
+  
+  
 });
 

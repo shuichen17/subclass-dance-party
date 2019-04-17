@@ -35,4 +35,13 @@ body, a:link, a:visited, a:active{
 .dancer{
   position: absolute;
   border-radius:10px;
+  transform: rotate(45deg);
 }
+
+.addLineUpButton {
+  float:right;
+  font-weight: bold;
+  color:red;
+}
+
+

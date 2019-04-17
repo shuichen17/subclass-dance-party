@@ -5,7 +5,7 @@ describe('redDancer', function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    redDancer = new makeRedDancer(10, 20, timeBetweenSteps);
+    redDancer = new makeRedDancer(10, 20, timeBetweenSteps);  // add new keyword because of pseudoclassical style
   });
 
   it('should have a jQuery $node object', function() {

@@ -8,8 +8,8 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 }
 
 makeDancer.prototype.step = function() {
-  //setTimeout.bind(this, timeBetweenSteps)
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
+  
 }
 
 makeDancer.prototype.setPosition = function(top, left) {
@@ -18,4 +18,13 @@ makeDancer.prototype.setPosition = function(top, left) {
     left: left,
   };
   this.$node.css(styleSettings);
+  
+                             
+  this.$node.mouseover(function() {       // mouseover characteristic provided by Dancer function to every dancer instance
+   
+    $('.rotated').css('transform', 'rotate(33deg)')  // using mouseover function will rotate
+   this.$node.mouseout(function() {          // mouseout is animation after the mouse left
+    $('.rotated').css('transform', 'rotate(66deg)')
+  })
 };
+

@@ -12,7 +12,6 @@ makeBlueDancer.prototype.step = function() {
   
   this.$node.toggle();
   this.$node.addClass('blueDancer');
-  this.$node.addClass('dancer');
 }
 
 makeBlueDancer.prototype.lineUp = function() {

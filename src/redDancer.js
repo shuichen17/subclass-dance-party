@@ -9,12 +9,11 @@ makeRedDancer.prototype.constructor = makeRedDancer;
 
 makeRedDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);
-  
-  this.$node.toggle();
-  this.$node.addClass('redDancer');
-  this.$node.addClass('dancer');
+  this.$node.toggle();    // blinky animation
+  this.$node.addClass('redDancer');  // add the redDancer class alongside Dancer class tag
 }
 
 makeRedDancer.prototype.lineUp = function() {
   this.$node.animate({left: '100px'});
 }
+
